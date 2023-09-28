@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+:root {
+  /* Colors */
+  --primary: #d7fe62;
+  --secondary: #ff9454;
+  --white: #ffffff;
+  --gray: #d4d4d4;
+  --black: #272727;
+
+  /* Font Size */
+  --caption: 12px;
+  --body: 16px;
+  --h3: 21.33px;
+  --h2: 28.43px;
+  --h1: 37.9px;
+}
+
+/* General Setting */
+
+body {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: var(--body);
+  background-color: var(--black);
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.outline-btn {
+  width: 100px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+/* Card Container */
+
+.card-container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+/* Card Title Container */
+
+.team-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-name-container .team-name {
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--h1);
+  font-weight: 600;
+}
+
+/* Card Header Container */
+
+.card-header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--gray);
+  padding: 30px;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+.card-header-section .my-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.card-header-section .my-name {
+  font-size: var(--h3);
+  font-weight: 800;
+}
+.card-header-section .my-goal {
+}
+
+/* Card Main Container */
+.card-main-section {
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 30px;
+}
+.card-main-section .card-title-container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--black);
+  font-weight: 700;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 10px auto 20px auto;
+}
+.card-main-section .card-title-container li {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card-main-section .card-title-container li:hover {
+  background-color: #ff9454;
+  border-radius: 20px;
+}
+
+.card-main-section .card-title-container li:focus {
+  background-color: var(--primary);
+  border-radius: 20px;
+}
+
+.card-main-section .card-main-container {
+}
+.card-main-section .card-main-container .card-title {
+}
+.card-main-section .card-main-container .card-contents {
+}
+.card-main-section .card-main-container .tag-container {
+}
+.card-main-section .card-main-container .tag-container .tag {
+}
+
+/* Board Form Section */
+
+.board-form-container {
+  border: 1px solid var(--gray);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+}
+.board-form-container .board-form-title {
+  margin-bottom: 30px;
+  font-size: var(--h3);
+  font-weight: 700;
+  color: var(--white);
+}
+.board-form-container .board-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.board-form-container .board-form .user-info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.board-form-container .board-form .user-info-container .input-field {
+  width: 100%;
+  height: 35px;
+  color: var(--white);
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.board-form-container .board-form .comments {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  color: var(--white);
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--white);
+  border-radius: 7px;
+  padding: 10px;
+  resize: none;
+}
+
+.board-form-container .board-form .user-info-container .input-field:focus,
+.board-form-container .board-form .user-info-container .input-field:active,
+.board-form-container .board-form .comments:focus,
+.board-form-container .board-form .comments:active {
+  border: 3px solid var(--white);
+  border-radius: 5px;
+}
+
+.board-form-container
+  .board-form
+  .user-info-container
+  .input-field::placeholder {
+  color: var(--gray);
+}
+
+.board-form-container .board-form .comments::placeholder {
+  color: var(--gray);
+}
+
+.board-form-container .board-form .form-submit-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.board-form-container .board-form .form-submit-btn-container .form-submit {
+}
+
+/* Borad Contents Section */
+.board-contents-section {
+  background-color: var(--white);
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.board-contents-section .board-contents-title {
+  padding: 30px;
+  font-size: var(--h3);
+  font-weight: 700;
+  color: var(--black);
+}
+
+.board-contents-section .board-data-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 8fr 1fr 1fr;
+  grid-template-rows: 50px 2fr 25px;
+  /* background-color: #d4d4d4; */
+  padding: 10px;
+  margin: 0 30px;
+}
+
+.board-contents-section .board-data-container .user-name-data {
+  font-size: var(--h3);
+  font-weight: 500;
+}
+
+.board-contents-section .board-data-container .comments-data {
+  height: -webkit-fill-available;
+  background-color: var(--secondary);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  grid-column: 1 / span 3;
+  padding: 20px;
+}
+.board-contents-section .board-data-container .created-date-data {
+  font-size: var(--caption);
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  padding-left: 10px;
+}
+.board-contents-section .board-data-container .delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--black);
+  cursor: pointer;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.board-contents-section .board-data-container .delete-btn:hover {
+  background-color: var(--secondary);
+}
+
+.board-contents-section .board-data-container .edit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--black);
+  cursor: pointer;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+/* Check Password Modal */
+.check-password-form {
+}
+.check-password-form .delete-password-input {
+}
+.check-password-form .delete-btn-container {
+}
+.check-password-form .delete-btn-container .delete-cancel {
+}
+.check-password-form .delete-btn-container .delete {
+}
+
+/* Edit Comments Modal */
+.edit-comments-form {
+}
+.edit-comments-form .edit-comments {
+}
+.edit-comments-form .edit-btn-container {
+}
+.edit-comments-form .edit-btn-container .edit-cancel {
+}
+.edit-comments-form .edit-btn-container .edit {
+}
+
+/* 소개 숨기기 */
+.hidden {
+  display: none;
+}

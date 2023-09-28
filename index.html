@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project</title>
+    <!-- Google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
+    <!-- CSS reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- MBTI 이미지 -->
+    <img
+      src="./img/Screenshot 2023-09-27 at 1.30.35 PM.png"
+      class="mbti-img hidden"
+      alt="" />
+
+    <div class="card-container">
+      <!-- Team Name Section -->
+      <header class="team-name-container">
+        <a class="team-name" href="javascript:void(0)">일단버티조</a>
+      </header>
+
+      <!-- Card Header Section -->
+      <section class="card-header-section">
+        <img
+          class="my-image"
+          src="https://images.unsplash.com/photo-1695133402115-84bd24b42e5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80"
+          alt="" />
+        <h1 class="my-name">전지현</h1>
+        <p class="my-goal">안녕하세요</p>
+      </section>
+
+      <!-- Card Main Section -->
+      <section class="card-main-section">
+        <ul class="card-title-container">
+          <li tabindex="1" class="card-title" id="card-1">나의 MBTI 및 성격</li>
+          <li tabindex="1" class="card-title" id="card-2">나의 장점</li>
+          <li tabindex="1" class="card-title" id="card-3">나의 협업 스타일</li>
+        </ul>
+
+        <div class="card-main-container hidden">
+          <p class="card-contents">
+            저의 MBTI는 INTP 입니다.저는 조용하고 집에있는 것을 좋아합니다.
+            그렇다고 365일 집에 있는 것은 아니고 여행을 좋아해 한번 세상에 대한
+            호기심이 발동하면 하루에 3만보씩 걸어다니기도 합니다. 계획없이 발길
+            닿는대로 걸어서 그런가 봅니다. 제가 말 없이 무표정일 때가 많아 가끔
+            '화났니?' 라는 말을 자주 듣는데, 아닙니다! 멍때리거나 생각하고
+            있는겁니다.
+          </p>
+          <div class="tag-container">
+            <span class="tag">#조용한</span>
+            <span class="tag">#친해지면말많음</span>
+            <span class="tag">#자유분방</span>
+            <span class="tag">#"그렇군요"</span>
+            <span class="tag">#일주일에한번외출</span>
+            <span class="tag">#아침에꼭커피</span>
+            <span class="tag">#화난거아님</span>
+          </div>
+        </div>
+
+        <div class="card-main-container hidden">
+          <p class="card-contents">
+            저는 조용하고 집에있는 것을 좋아합니다. 그렇다고 365일 집에 있는
+            것은 아니고 여행을 좋아해 한번 세상에 대한 호기심이 발동하면 하루에
+            3만보씩 걸어다니기도 합니다. 계획없이 발길 닿는대로 걸어서 그런가
+            봅니다. 제가 말 없이 무표정일 때가 많아 가끔 '화났니?' 라는 말을
+            자주 듣는데, 아닙니다! 멍때리거나 생각하고 있는겁니다.
+          </p>
+          <div class="tag-container">
+            <span class="tag">#오픈마인드</span>
+            <span class="tag">#호기심</span>
+            <span class="tag">#신중함</span>
+            <span class="tag">#관대함</span>
+            <span class="tag">#인내심</span>
+          </div>
+        </div>
+
+        <div class="card-main-container hidden">
+          <p class="card-contents">
+            INTP가 개인주의라고 하는데 협업에서는 그렇지 않습니다! 저는 결과물을
+            위해 꼭 소통도 필요하다고 생각하고, 제 할 일을 다했다고 쉬지
+            않습니다. 다른 팀원들이 못 다한 부분이 있으면 도와주는 편입니다.
+            필요하다면 주말에도 새벽에도 함께 고민하고 해결하는 편입니다.
+          </p>
+          <div class="tag-container">
+            <span class="tag">#효율성중시</span>
+            <span class="tag">#개방적</span>
+            <span class="tag">#소통도중요</span>
+            <span class="tag">#필요하면새벽에도</span>
+            <span class="tag">#데드라인꼭지켜</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Board Form Section -->
+      <div class="board-form-container">
+        <h3 class="board-form-title">방명록 작성</h3>
+        <form class="board-form">
+          <div class="user-info-container">
+            <input
+              class="user-name input-field"
+              type="text"
+              placeholder="이름을 적어주세요."
+              required
+              maxlength="20" />
+            <input
+              class="password input-field"
+              type="password"
+              placeholder="비밀번호를 입력해주세요."
+              required />
+          </div>
+          <textarea
+            class="comments"
+            name=""
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="내용을 입력해 주세요."></textarea>
+
+          <div class="form-submit-btn-container">
+            <input type="submit" class="form-submit btn" value="등록" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Board Contents Section -->
+    <section class="board-contents-section">
+      <h3 class="board-contents-title">작성된 게시물</h3>
+    </section>
+
+    <!-- Check Password Modal -->
+    <form class="check-password-form">
+      <input
+        class="delete-password-input"
+        type="password"
+        placeholder="비밀번호를 입력해주세요" />
+      <div class="delete-btn-container">
+        <input type="submit" class="delete-cancel outline-btn" value="취소" />
+        <input type="submit" class="delete btn" value="삭제" />
+      </div>
+    </form>
+
+    <!-- Edit Comments Modal -->
+    <form class="edit-comments-form">
+      <textarea
+        class="edit-comments"
+        name=""
+        id="edit-comments"
+        cols="30"
+        rows="10"
+        placeholder=""></textarea>
+
+      <div class="edit-btn-container">
+        <input type="submit" class="edit-cancel outline-btn" value="취소" />
+        <input type="submit" class="edit btn" value="수정" />
+      </div>
+    </form>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
