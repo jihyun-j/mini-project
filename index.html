@@ -124,7 +124,8 @@
             id="comments"
             cols="30"
             rows="10"
-            placeholder="내용을 입력해 주세요."></textarea>
+            placeholder="내용을 입력해 주세요."
+            required></textarea>
 
           <div class="form-submit-btn-container">
             <input type="submit" class="form-submit btn" value="등록" />
@@ -139,7 +140,9 @@
     </section>
 
     <!-- Check Password Modal -->
-    <form class="check-password-form">
+
+    <form class="check-password-form hidden">
+      <p class="password-message"></p>
       <input
         class="delete-password-input"
         type="password"
@@ -151,7 +154,7 @@
     </form>
 
     <!-- Edit Comments Modal -->
-    <form class="edit-comments-form">
+    <form class="edit-comments-form hidden">
       <textarea
         class="edit-comments"
         name=""

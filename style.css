@@ -308,8 +308,29 @@ body {
 
 /* Check Password Modal */
 .check-password-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: #ff9454;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 .check-password-form .delete-password-input {
+  height: 40px;
+  width: 250px;
+  margin-bottom: 50px;
+  outline: none;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  padding: 0 10px;
+}
+.check-password-form .delete-password-input:focus {
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  padding: 0 10px;
 }
 .check-password-form .delete-btn-container {
 }
@@ -320,8 +341,21 @@ body {
 
 /* Edit Comments Modal */
 .edit-comments-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: var(--gray);
+  margin: 0 auto;
+  border-radius: 10px;
 }
 .edit-comments-form .edit-comments {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 10px;
+  resize: none;
 }
 .edit-comments-form .edit-btn-container {
 }
